@@ -1,0 +1,153 @@
+:root {
+/* COLORS */
+--clr-active-linear:linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%));
+--clr-red: hsl(0, 100%, 66%);
+--clr-white: hsl(0, 0%, 100%);
+--clr-light-grayish-violet: hsl(270, 3%, 87%);
+--clr-dark-grayish-violet: hsl(279, 6%, 55%);
+--clr-very-dark-violet: hsl(278, 68%, 11%);
+--fs: 18px;
+--font: 'Space Grotesk';
+--fw: 500;
+
+/*    FONTS    */
+--ff-primary: 'Roboto', sans-serif;
+--ff-secondary: 'Open Sans', sans-serif;
+--transition: all 0.2s linear;
+--spacing: 0.2rem;
+--radius: 0.25rem;
+--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+--max-width: 1170px;
+--fixed-width: 620px;
+}
+
+/* Global Styles */
+* {
+    box-sizing: border-box; 
+    margin: 0rem; 
+    padding: 0rem; 
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: var(--fs);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Mobile fast workflow */
+
+/*  <====== Backgrounds ======>   */
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: var(--clr-white);
+}
+.section-top {
+    width: 100%;
+    height: 240px;
+    position: fixed;
+}
+
+/* Background Image Mobile */
+#bg-mobile {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+/*  <====== Card Back ======>   */
+.card-container {
+    width: 70%;
+    height: auto;
+}
+
+/* Styles specific to the card back container */
+
+.back {
+    margin: 2rem 1rem 3rem 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.card {
+    width: 100%;
+
+}
+
+.cvv {
+    position: absolute;
+    margin-left: 10rem;
+    color: var(--clr-white);
+    font-size: 14px;
+    font-weight: var(--fw);
+}
+
+
+
+
+
+
+
+
+/* Desktop Designs */
+@media (min-width:700px)
+{
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .section-top {
+        height: 100%;
+        width: 40%;
+        background-image: url(./images/bg-main-desktop.png);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Attribution */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
