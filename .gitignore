@@ -15,4 +15,5 @@
 .DS_Store
 .prettierignore
 
+#   Avoid the readme template
 README-template.md
