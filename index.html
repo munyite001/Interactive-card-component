@@ -35,7 +35,7 @@
 
         <img src="./images/bg-card-back.png" alt="Back of the card" class ="card" id="card-back">
 
-        <span class="cvv">000</span>
+        <span class="cvc">000</span>
 
       </div>
       <!-- end of single card -->
@@ -84,11 +84,11 @@
 
           </label>
 
-          <label for="card-number">
+          <label for="user-card-number">
 
             <span class="input-field-text">card number</span>
 
-            <input type="text" id="card-number" class="card-details" placeholder="1234 5678 9123 0000">
+            <input type="text" id="user-card-number" class="card-details" placeholder="1234 5678 9123 0000">
 
           </label>
 
@@ -100,13 +100,13 @@
 
               <label for="month">
 
-                <input class="exp-details" type="text" id="month" placeholder="MM">
+                <input class="exp-details" type="text" id="month" placeholder="MM" data-id="month">
 
               </label>
 
               <label for="Year">
 
-                <input class="exp-details" type="text" id="year"placeholder="YY">
+                <input class="exp-details" type="text" id="year"placeholder="YY" data-id="year">
 
               </label>
 
@@ -147,6 +147,9 @@
 
   </footer>
 
+
+  <!-- JavaScript -->
+  <script src="./app.js"></script>
 </body>
 
 </html>

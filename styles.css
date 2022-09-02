@@ -93,7 +93,7 @@ main {
 
 }
 
-.cvv {
+.cvc {
     position: absolute;
     margin-left: 10rem;
     color: var(--clr-white);
@@ -261,7 +261,7 @@ input[type='text']::placeholder {
     /* Card Back */
     .back {
         margin: 20rem 0;
-        transform: translate(60%);
+        transform: translate(55%);
     }
     /* Card Front */
     .front {
