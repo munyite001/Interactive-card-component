@@ -28,6 +28,7 @@
     <section class="section-top">
 
       <img src="./images/bg-main-mobile.png" alt="Background Image Mobile" id="bg-mobile">
+
       <img src="./images/bg-main-desktop.png" alt="Background Image Desktop" id="bg-desktop">
 
       <!-- single card -->
@@ -82,6 +83,8 @@
 
             <input type="text" id="name" class="card-details" placeholder="e.g. Jane Appleseed">
 
+            <span class="error"></span>
+
           </label>
 
           <label for="user-card-number">
@@ -89,6 +92,8 @@
             <span class="input-field-text">card number</span>
 
             <input type="text" id="user-card-number" class="card-details" placeholder="1234 5678 9123 0000">
+
+            <span class="error">test</span>
 
           </label>
 
@@ -101,6 +106,8 @@
               <label for="month">
 
                 <input class="exp-details" type="text" id="month" placeholder="MM" data-id="month">
+                
+                <span class="error"></span>
 
               </label>
 
@@ -108,11 +115,15 @@
 
                 <input class="exp-details" type="text" id="year"placeholder="YY" data-id="year">
 
+                <span class="error"></span>
+
               </label>
 
               <label for="cvc">
 
-                <input class="exp-details" type="text" id="cvc" placeholder="e.g.123">
+                <input class="exp-details" type="text" id="cvc" placeholder="e.g.123"data-id="cvc">
+
+                <span class="error">Test</span>
 
               </label>
 

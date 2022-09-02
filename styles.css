@@ -261,7 +261,7 @@ input[type='text']::placeholder {
     /* Card Back */
     .back {
         margin: 20rem 0;
-        transform: translate(55%);
+        transform: translate(50%);
     }
     /* Card Front */
     .front {
@@ -293,33 +293,26 @@ input[type='text']::placeholder {
 
 }
 
+@media (min-width: 900px)
+{
+    .back {
+        transform: translate(60%);
+    }
+}
 
+/*  <====== ERROR MESSAGES ======>   */
+label .error {
+    display: none;
+    margin-top: 0.1rem;
+    text-transform: lowercase;
+    font-size: 11px;
+    color: var(--clr-red);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* empty error */
+.error-msg{
+    border: 1px solid var(--clr-red) !important;
+}
 
 
 
