@@ -15,14 +15,40 @@ const userCardCvc = document.getElementById('cvc');
 const expDetails = document.querySelectorAll('.exp-details');
 
 
+
+//  Handling the form when input has been validated
+const wrapper = document.querySelector('.wrapper');
+const btn = document.querySelector('.btn');
+
+
 form.addEventListener('submit', (e) => {
     //Prevent default behavior, i.e, submitting data to a server
     e.preventDefault();
 
     // Validate and place the user input details on the card
     cardName .textContent = userName.value;
-    validateCardNumber();
-    validateExpDate();
+
+
+    if (validateCardNumber() && validateExpDate())
+    {
+        wrapper.classList.add('complete');
+
+        let complete = document.querySelector('.complete');
+
+        complete.innerHTML = `
+
+        <div class="complete-container">
+        
+            <img src="./images/icon-complete.svg" alt="Complete icon" class="complete-icon">
+
+        </div>
+
+        <h2> THANK YOU! </h2>
+
+        <p> We've added your card details </p>
+
+        `;
+    }
     
 })
 
@@ -32,6 +58,7 @@ function validateCardNumber()
     if(validateEmpty(userCardNumber) && validateInteger(userCardNumber))
     {
         cardNumber.innerHTML = userCardNumber.value;
+        return true;
     }
     
 }
@@ -51,6 +78,7 @@ function validateExpDate()
     {
             CardExpDate.innerHTML = `${expMonth.value}/${expYear.value}`;
             cardcvc.innerHTML = `${userCardCvc.value}`;
+            return true;
     }
 
 }

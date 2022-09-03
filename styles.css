@@ -316,6 +316,37 @@ label .error {
 
 
 
+
+
+/* Styles for the complete message when the input has been validated */
+.complete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.complete-container {
+    width: 100px;
+    margin: 1rem auto;
+
+}
+
+.complete-container img {
+    width: 100%;
+}
+
+.complete h2 {
+    color: var(--clr-very-dark-violet);
+    margin: 1rem auto;
+}
+.complete p {
+    margin: 1rem auto 3rem;
+    color: var(--clr-dark-grayish-violet);
+}
+
+
+
 /* Attribution */
 .attribution { 
     font-size: 11px; text-align: center; 
