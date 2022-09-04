@@ -14,11 +14,11 @@ This is a solution to the [Interactive card details form challenge on Frontend M
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
+Wow!. This was a really nice cahllenge. It really gets you thinking.
+On the surface, it might seem simple but the functionality you have to incorporate, really packs a punch. Overall, it is a very great challenge, if you are looking to test your javascript skills, and to try and practise form validation using javascript.
+
 
 ### The challenge
 
@@ -33,22 +33,23 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./Screenshots/Desktop%20Design.png)
+![](./Screenshots/Mobile%20Design.png)
+![](./Screenshots/Desktop%20Complete%20Status.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution Repo: [GitHub]()
+- Live Site URL: [Netlify]()
 
 ## My process
+I work with a mobile first Work flow.
+For me, the first step is always analysing the designs, first the mobile design then the desktop design, to see how "everything fits".
+This will help me in seeing how to structure the media breakpoints when switching from one screen to another.
+After analysis, I then lay the foudations and the structure with html.
+Then I apply the mobile design styles, then later on breakpoints for bigger screen sizes
+Then I add the functionality using js
+
 
 ### Built with
 
@@ -56,60 +57,35 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- javaScript
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I have learned alot from this cahllenge.
+First thing being how to validate form input using js.
+Initially I would just add the validation to the html using attributes like, required or number etc. The problem with that approach is that the styling would be off, and your designs would just look bad, but with js, you can style how the errors will look like if the input is not the one you intended.
 
-To see how you can add code snippets, see below:
+I have alos learned how to manipulate form inputs using js.
+When dealing with credit cards, most people will always just ignore that the number sets need to be seperated with spaces(xxxx xxxx xxxx xxxx), and if input is fed in the old way without spaces, then the whole thing will look just wrong(xxxxxxxxxxxxxxx)
+So using js, i created a function that would listen foriput events in the card number input box, and after every fourth digit, it would automatically add a space, which was really cool
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+userCardNumber.addEventListener('input',()=> {
+        i += 1;
+        if(i % 4 == 0 && i < 16)
+        {
+            userCardNumber.value += ' ';
+        }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
+This is just the first version, so while indeed the functionality is working, the overall structure might not be the best looking or the most efficient(mostly for js), so I want to continue refining and refactoring the code, in order to make it as efficient as possible
+PS if you have some pointers on how to improve or if you'd want to patner up for a project, let me know
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
+- [Regular Expression Generator](https://www.regex101.com) - This helped me for coming up with targeted regex expressions for the input validation. Using regular expressions for input validation is really easy and very efficient, so going forward, I will try to get rid of the bulky functions and try to come up with simpler regular expressions.
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Github](https://www.your-site.com)
+- Frontend Mentor - [@munyite001](https://www.frontendmentor.io/profile/munyite001)
+- Twitter - [@emunyite](https://www.twitter.com/emunyite)
