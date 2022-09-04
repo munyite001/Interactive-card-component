@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution Repo: [GitHub]()
-- Live Site URL: [Netlify]()
+- Solution Repo: [GitHub](https://github.com/munyite001/Interactive-card-component)
+- Live Site URL: [Netlify](https://interactive-credit-card-fm.netlify.app/)
 
 ## My process
 I work with a mobile first Work flow.
@@ -86,6 +86,6 @@ PS if you have some pointers on how to improve or if you'd want to patner up for
 - [Regular Expression Generator](https://www.regex101.com) - This helped me for coming up with targeted regex expressions for the input validation. Using regular expressions for input validation is really easy and very efficient, so going forward, I will try to get rid of the bulky functions and try to come up with simpler regular expressions.
 ## Author
 
-- Website - [Github](https://www.your-site.com)
+- Website - [Github](https://github.com/munyite001)
 - Frontend Mentor - [@munyite001](https://www.frontendmentor.io/profile/munyite001)
 - Twitter - [@emunyite](https://www.twitter.com/emunyite)
